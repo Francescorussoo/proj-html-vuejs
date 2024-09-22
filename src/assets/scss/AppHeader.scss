@@ -29,7 +29,7 @@
           font-weight: bold;
   
           &:hover {
-            color: #ffcc00;
+            color: #ec4858;
           }
         }
       }
@@ -44,14 +44,14 @@
         margin: 0;
   
         span {
-          color: #ffcc00;
+          color: #ec4858;
         }
       }
   
       .cta-button {
         margin-top: 20px;
         padding: 10px 20px;
-        background-color: #ffcc00;
+        background-color: #ec4858;
         border: none;
         color: #000;
         font-size: 16px;
@@ -59,7 +59,7 @@
         transition: background-color 0.3s;
   
         &:hover {
-          background-color: #ffa500;
+          background-color: #ec4858;
         }
       }
     }
