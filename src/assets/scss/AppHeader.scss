@@ -1,0 +1,67 @@
+.app-header {
+    background-image: url('../assets/69RLiJ2.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+  
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      .logo img {
+        height: 50px;
+      }
+  
+      .nav-links {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+  
+        li a {
+          color: #fff;
+          text-decoration: none;
+          font-weight: bold;
+  
+          &:hover {
+            color: #ffcc00;
+          }
+        }
+      }
+    }
+  
+    .hero-content {
+      text-align: left;
+      max-width: 500px;
+  
+      h1 {
+        font-size: 48px;
+        margin: 0;
+  
+        span {
+          color: #ffcc00;
+        }
+      }
+  
+      .cta-button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #ffcc00;
+        border: none;
+        color: #000;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: #ffa500;
+        }
+      }
+    }
+  }
+  
