@@ -44,7 +44,7 @@
         margin: 0;
   
         span {
-          color: #ec4858;
+          color: yellow;
         }
       }
   
@@ -52,8 +52,9 @@
         margin-top: 20px;
         padding: 10px 20px;
         background-color: #ec4858;
+        border-radius: 20px;
         border: none;
-        color: #000;
+        color: #fff;
         font-size: 16px;
         cursor: pointer;
         transition: background-color 0.3s;
