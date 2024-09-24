@@ -70,6 +70,38 @@
         <span>Keto Friendly</span>
       </div>
     </section>
+    <section class="second-banner">
+      <div class="banner-content">
+       <h2>Download Our <br><span><strong>Ordering App</strong></span></h2>
+      <div class="store-buttons">
+      <a href="#" class="store-button">
+        <img src="../assets/app-store-badge-200x67.png" alt="Download on the App Store" />
+      </a>
+      <a href="#" class="store-button">
+        <img src="../assets/play-store-badge-200x67.png" alt="Get it on Google Play" />
+      </a>
+      </div>
+    </div>
+      <img src="../assets/app-ordering-scaled.jpg" alt="App Ordering Banner" />
+    </section>
+    <section class="latest-news">
+     <div class="news-header">
+      <h2>Latest News</h2>
+    <button class="read-more-news">Read More News</button>
+    </div>
+    <div class="news-grid">
+     <div class="news-item">
+      <img src="../assets/pancake-burger-600x450.jpg" alt="Pancake Burger">
+      <h3>NEW: The Pancake Burger</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales ipsum vel elementum vehicula. Suspendisse sit amet aliquet ex. Pellentesque commodo tortor vel mi.</p>
+     </div>
+    <div class="news-item">
+      <img src="../assets/new-milkshake-menu-600x450.jpg" alt="New Milkshake Menu">
+      <h3>New Milkshake Menu</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales ipsum vel elementum vehicula. Suspendisse sit amet aliquet ex. Pellentesque commodo tortor vel mi.</p>
+    </div>
+    </div>
+    </section>
   </main>
 </template>
 
@@ -195,8 +227,8 @@ export default {
       transition: background-color 0.3s;
 
       &:hover {
-          background-color: #ec4858;
-        }
+        background-color: #d43c4f;
+      }
     }
   }
 
@@ -240,7 +272,7 @@ export default {
         transition: background-color 0.3s;
 
         &:hover {
-          background-color: #ec4858;
+          background-color: #d43c4f;
         }
       }
     }
@@ -285,27 +317,144 @@ export default {
         font-size: 40px;
         margin-bottom: 5px;
 
-      &.fa-leaf {
-        color: #4caf50;
-      }
+        &.fa-leaf {
+          color: #4caf50;
+        }
 
-      &.fa-wheat-awn {
-        color: #fbc02d;
-      }
+        &.fa-wheat-awn {
+          color: #fbc02d;
+        }
 
-      &.fa-bottle-droplet {
-        color: #2196f3;
-      }
+        &.fa-bottle-droplet {
+          color: #2196f3;
+        }
 
-      &.fa-bacon {
-        color: #d2691e;
+        &.fa-bacon {
+          color: #d2691e;
+        }
       }
-    }
 
       span {
         margin-top: 5px;
         font-size: 14px;
         color: #333;
+      }
+    }
+  }
+
+  .second-banner {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .banner-content {
+      position: absolute;
+      left: 15%;
+      top: 33%;
+      text-align: left;
+
+      h2 {
+        font-size: 26px;
+        line-height: 1.2;
+        color: #fff;
+        margin-bottom: 20px;
+
+        span{
+        font-size: 50px;
+        line-height: 1.2;
+        color: #f4b400;
+        margin-bottom: 20px;
+        }
+      }
+
+      .store-buttons {
+        display: flex;
+        gap: 10px;
+
+        .store-button img {
+          width: 150px;
+          height: auto;
+          transition: transform 0.3s;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .latest-news {
+    margin: 40px 0;
+    text-align: center;
+
+    .news-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+
+      h2 {
+        font-size: 28px;
+        position: relative;
+        left: 345px;
+      }
+
+      .read-more-news {
+        padding: 10px 20px;
+        position: relative;
+        right: 340px;
+        background-color: #ec4858;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        font-size: 16px;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #d43c4f;
+        }
+      }
+    }
+
+    .news-grid {
+      display: flex;
+      gap: 65px;
+      justify-content: center;
+
+      .news-item {
+        max-width: 30%;
+        text-align: center;
+
+        img {
+          width: 100%;
+          border-radius: 8px;
+          margin-bottom: 10px;
+        }
+
+        h3 {
+          font-size: 22px;
+          margin: 10px 0;
+          font-weight: bold;
+        }
+
+        p {
+          font-size: 14px;
+          color: #666;
+        }
       }
     }
   }
